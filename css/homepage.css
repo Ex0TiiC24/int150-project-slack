@@ -6,4 +6,50 @@
 *{
     font-family: var(--fontbody);
     font-size: 1rem;
+
+}
+body{
+    margin: 0;
+}
+header{
+    width: 100%;
+    display: grid;
+    padding: 1rem;
+    grid-template-columns: auto 2fr 4rem 8rem 5rem;
+}
+#logo{
+    width: 6rem;
+}
+#searchlogo{
+    width: 1.5rem;
+    
+}
+.searchlogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column-start:3;    
+}
+.getStarted{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column-start: 4;
+    background-color: rgb(80, 4, 80);
+    color:white;
+    font-weight: 600;
+    border-radius: 6px;
+}
+.hamburger{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 20px;
+}
+#hamburg{
+    width: 1.5rem;
+}
+.main-button{
+    display: flex;
+    justify-content: center;
 }
