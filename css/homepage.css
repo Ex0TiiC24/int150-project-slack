@@ -1,0 +1,9 @@
+@import url(https://db.onlinewebfonts.com/c/0fadaa21fcac88ceee0bb8da992c221b?family=Salesforce+Sans);
+
+:root{
+    --fontbody:"Salesforce Sans";
+}
+*{
+    font-family: var(--fontbody);
+    font-size: 1rem;
+}
