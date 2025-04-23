@@ -2,6 +2,7 @@
 
 :root{
     --fontbody:"Salesforce Sans";
+    --fontheading:"Salesforce-Avant-Garde", system-ui, -apple-system;
 }
 *{
     font-family: var(--fontbody);
@@ -16,6 +17,13 @@ header{
     display: grid;
     padding: 1rem;
     grid-template-columns: auto 2fr 4rem 8rem 5rem;
+}
+h1{
+    letter-spacing: -.256px;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    font-family: var(--fontheading);
+    font-weight:620;
 }
 #logo{
     width: 7rem;
@@ -53,6 +61,11 @@ header{
 
 main{
     margin-top: 1.9rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 .main-button{
@@ -63,10 +76,13 @@ main{
     gap: 18px;
 }
 .main-button p{
-    padding: 0 13rem 0 13rem;
+    padding: 0 30vw;
     font-size: 18px;
     text-align: center;
-
+    margin-bottom: 0.45rem;
+    letter-spacing: -.004em;
+    font-size: 1.125rem;
+    line-height: 1.555;
 }
 
 .main-button a{
@@ -76,7 +92,7 @@ main{
     background-color:rgb(80, 4, 80) ;
     color: white;
     width: 40%;
-    height: 50px;
+    height: 3.75rem;
     text-decoration: none;
     font-weight: 700;
     border-radius: 4px;
@@ -86,4 +102,64 @@ main{
     background-color: white;
     color:rgb(80, 4, 80);
     border: 1.5px solid rgb(80, 4, 80);
+}
+
+.main-connect{
+    display: flex;
+    flex-flow: row wrap;
+    margin-top:2.5rem;
+    margin-bottom:2.5rem;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    gap:20px
+}
+.main-connect img {
+    height:1.65rem;
+}
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    width: 100%;
+}
+.main-content .discussing{
+    width: 80%;
+    border-radius: 8px;
+    
+}
+.main-content .arc{
+    clip-path: ellipse(80% 200% at 50% 200%);
+    background-color: #f9f0ff;
+    width: 100%;
+    height: 2rem;
+    margin-top: -5rem;
+    z-index: -1;
+    position: relative;
+}
+
+.main-content .bg{
+    background: #F9F0FF;
+    background: linear-gradient(180deg, rgba(249, 240, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    width: 100%;
+    padding-top: 2.25rem;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main-content .bg .headline{
+    /* */
+}
+
+.main-content .bg .headline h1{
+    text-align: center;
+
+}
+.main-connect .bg .collab h1{
+    text-align: center;
 }
