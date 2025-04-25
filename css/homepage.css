@@ -59,6 +59,9 @@ h1 {
   width: 1.5rem;
 }
 
+div p {
+    font-size: 1.125rem;
+}
 main {
   margin-top: 1.9rem;
   display: flex;
@@ -163,11 +166,12 @@ main {
   text-align: center;
 }
 .collab {
-  padding: 0 1.25rem 0 1.25rem;
+  padding: 0 1.65rem 0 1.65rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 4.75rem;
 }
 #handclap {
   width: 30px;
@@ -188,7 +192,6 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-
   gap: 1rem;
   letter-spacing: -0.004em;
   font-size: 1.125rem;
@@ -196,6 +199,7 @@ main {
   line-height: 1.555;
   font-weight: unset;
   margin-bottom: 1rem;
+  margin-right: auto;
 }
 .fortune h1 {
   color: var(--seccolor);
@@ -212,11 +216,12 @@ main {
 }
 
 .project {
-  padding: 0 1.25rem 0 1.25rem;
+  padding: 0 1.65rem 0 1.65rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 4.75rem;
 }
 .project h1{
     margin-right: auto;
@@ -226,17 +231,37 @@ main {
 }
 
 .integrations{
-    padding: 0 1.25rem 0 1.25rem;
+    padding: 0 1.65rem 0 1.65rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 4.75rem;
 }
 
 .integrations h1{
     margin-right: auto;
 }
 
-.integrations .fortune{
+.slackai{
+    padding: 0 1.65rem 0 1.65rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:1rem;
+}
+.slackai h1{
     margin-right: auto;
 }
+.card{
+    display: flex;
+    flex-direction: column;
+    margin:0 1.65rem 0 1.65rem;
+    padding: 1rem;
+    background: linear-gradient(#daeefe 0%,#e3f0ff 23.12%,#f9f7ff 70%,#fff 100%);
+    margin-bottom: 4rem;
+    box-shadow: 0 5px 20px #0000001a;
+    border-radius: 1rem;
+}
+
