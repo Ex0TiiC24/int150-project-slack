@@ -8,6 +8,7 @@
   --fontheading: 'Salesforce-Avant-Garde', system-ui, -apple-system;
   --maincolor: #611f69;
   --seccolor: #9602c7;
+    
 }
 * {
   font-family: var(--fontbody);
@@ -27,8 +28,9 @@ h1 {
   font-size: 2rem;
   line-height: 2.5rem;
   font-family: var(--fontheading);
-  
-  
+}
+p {
+  font-size: 1.125rem;
 }
 #logo {
   width: 6rem;
@@ -65,9 +67,6 @@ h1 {
   width: 1.5rem;
 }
 
-div p {
-    font-size: 1.125rem;
-}
 main {
   margin-top: 1.9rem;
   display: flex;
@@ -90,9 +89,10 @@ main {
   text-align: center;
   margin-bottom: 0.45rem;
   letter-spacing: -0.004em;
-  font-size: 1.125rem;
+  font-size: 0.9rem;
   line-height: 1.555;
   padding: 0 8vw;
+  max-width: 24.5rem;
 }
 
 .main-button a {
@@ -106,6 +106,7 @@ main {
   text-decoration: none;
   font-weight: 700;
   border-radius: 4px;
+  min-width: 70%;
 }
 .main-button a + a {
   background-color: white;
@@ -124,7 +125,7 @@ main {
   gap: 20px;
 }
 .main-connect img {
-  height: 1.65rem;
+  height: 0.9rem;
 }
 
 .main-content {
@@ -163,6 +164,7 @@ main {
   display: flex;
   justify-content: center;
   flex-direction: column;
+
 }
 
 .main-content .bg .headline h1 {
@@ -177,7 +179,7 @@ main {
   text-align: center;
 }
 .collab {
-  padding: 0 1.65rem 0 1.65rem;
+  padding: 0 0.9rem 0 0.9rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -203,9 +205,10 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   gap: 1rem;
   letter-spacing: -0.004em;
-  font-size: 1.125rem;
+  font-size: 0.9rem;
   font-weight: 700;
   line-height: 1.555;
   font-weight: unset;
@@ -228,7 +231,7 @@ main {
 }
 
 .project {
-  padding: 0 1.65rem 0 1.65rem;
+  padding: 0 0.9rem 0 0.9rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -243,7 +246,7 @@ main {
 }
 
 .integrations{
-    padding: 0 1.65rem 0 1.65rem;
+    padding: 0 0.9rem 0 0.9rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -256,7 +259,7 @@ main {
 }
 
 .slackai{
-    padding: 0 1.65rem 0 1.65rem;
+    padding: 0 0.9rem 0 0.9rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -272,8 +275,9 @@ main {
 .card{
     display: flex;
     flex-direction: column;
-    margin:0 1.65rem 0 1.65rem;
+    margin:0 0.9rem 0 0.9rem;
     padding: 1rem;
+    padding-top:1.5rem;
     background: linear-gradient(#daeefe 0%,#e3f0ff 23.12%,#f9f7ff 70%,#fff 100%);
     margin-bottom: 4rem;
     box-shadow: 0 5px 20px #0000001a;
@@ -281,4 +285,18 @@ main {
 }
 div h1{
   margin-bottom: 0
+}
+
+.quote {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-bottom: 4rem;
+}
+.type{
+  display: flex;
+  flex-direction: column;
 }
