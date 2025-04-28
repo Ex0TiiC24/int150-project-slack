@@ -4,11 +4,10 @@
   src: url(../assets/fonts/AVGARDD_2.TTF);
 }
 :root {
-  --fontbody: 'Salesforce Sans';
-  --fontheading: 'Salesforce-Avant-Garde', system-ui, -apple-system;
+  --fontbody: "Salesforce Sans";
+  --fontheading: "Salesforce-Avant-Garde", system-ui, -apple-system;
   --maincolor: #611f69;
   --seccolor: #9602c7;
-    
 }
 * {
   font-family: var(--fontbody);
@@ -24,13 +23,17 @@ header {
   grid-template-columns: auto 2fr 4rem 0rem 5rem;
 }
 h1 {
-  letter-spacing: -.256px;
+  letter-spacing: -0.256px;
   font-size: 2rem;
   line-height: 2.5rem;
   font-family: var(--fontheading);
 }
 p {
   font-size: 1.125rem;
+}
+
+a {
+  text-decoration: none;
 }
 #logo {
   width: 6rem;
@@ -164,7 +167,6 @@ main {
   display: flex;
   justify-content: center;
   flex-direction: column;
-
 }
 
 .main-content .bg .headline h1 {
@@ -198,8 +200,8 @@ main {
   padding-top: 2px;
   font-weight: 500;
 }
-.collab h1{
-    margin-right: auto;
+.collab h1 {
+  margin-right: auto;
 }
 .fortune {
   display: flex;
@@ -220,7 +222,6 @@ main {
   font-size: 3.125rem;
   line-height: 1.25;
   font-weight: 700;
-  
 }
 .main-video {
   width: 97.5%;
@@ -238,15 +239,15 @@ main {
   align-items: center;
   margin-bottom: 4.75rem;
 }
-.project h1{
-    margin-right: auto;
+.project h1 {
+  margin-right: auto;
 }
-.project .fortune{
-    margin-right: auto;
+.project .fortune {
+  margin-right: auto;
 }
 
-.integrations{
-    padding: 0 0.9rem 0 0.9rem;
+.integrations {
+  padding: 0 0.9rem 0 0.9rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -254,37 +255,42 @@ main {
   margin-bottom: 4.75rem;
 }
 
-.integrations h1{
-    margin-right: auto;
+.integrations h1 {
+  margin-right: auto;
 }
 
-.slackai{
-    padding: 0 0.9rem 0 0.9rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom:1rem;
+.slackai {
+  padding: 0 0.9rem 0 0.9rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
 }
-.slackai h1{
-    margin-right: auto;
+.slackai h1 {
+  margin-right: auto;
 }
-.slackai .fortune h1{
+.slackai .fortune h1 {
   min-width: 11rem;
 }
-.card{
-    display: flex;
-    flex-direction: column;
-    margin:0 0.9rem 0 0.9rem;
-    padding: 1rem;
-    padding-top:1.5rem;
-    background: linear-gradient(#daeefe 0%,#e3f0ff 23.12%,#f9f7ff 70%,#fff 100%);
-    margin-bottom: 4rem;
-    box-shadow: 0 5px 20px #0000001a;
-    border-radius: 1rem;
+.card {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0.9rem 0 0.9rem;
+  padding: 1rem;
+  padding-top: 1.5rem;
+  background: linear-gradient(
+    #daeefe 0%,
+    #e3f0ff 23.12%,
+    #f9f7ff 70%,
+    #fff 100%
+  );
+  margin-bottom: 4rem;
+  box-shadow: 0 5px 20px #0000001a;
+  border-radius: 1rem;
 }
-div h1{
-  margin-bottom: 0
+div h1 {
+  margin-bottom: 0;
 }
 
 .quote {
@@ -292,11 +298,87 @@ div h1{
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 1.625rem;
+  padding-right: 1.625rem;
   margin-bottom: 4rem;
+  flex-direction: column;
+  gap: 2rem;
 }
-.type{
+.quote p{
+  display: none;
+}
+
+.packages-container {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fill, 19.75rem);
+  grid-template-rows: repeat(auto-fill,1fr);
+  justify-content: center;
+  padding: 1rem;
+}
+.packages {
+  border: 1px solid #d3d3d3;
+  border-radius: 0.5rem;
+  flex-direction: column;
+  padding: 1em;
+  display: flex;
+  margin: .5rem;
+  
+}
+.packages h2 {
+  font-family: var(--font-family-heading);
+  letter-spacing: -0.004em;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.333;
+  margin: 0;
+}
+.packages p {
+  letter-spacing: 0;
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.2857;
+}
+.packages li{
+  display: flex;
+  justify-content: left;
+  
+}
+.packages li p{
+  margin:0;
+}
+.packages li img {
+  position: relative;
+  top:-4px
+}
+.packages ul{
+  list-style-type: none;
+  padding: 0;
   display: flex;
   flex-direction: column;
+  gap: .425rem
 }
+.packages p+p{
+  margin-bottom: 0;
+}
+.packages li .packai{
+  color: #1264a3;
+  align-items: center;
+  padding: .25rem 0 .5rem;
+  font-weight: 600;
+  display: flex;
+}
+.packages li p span{
+  text-transform: uppercase;
+    background-color: #c2e6fd;
+    border-radius: 1.25rem;
+    max-height: 1rem;
+    margin: .15rem 0 0 .5rem;
+    padding: .1rem .4rem 0;
+    font-size: .65rem;
+}
+
+
+
