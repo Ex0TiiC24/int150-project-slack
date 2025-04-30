@@ -395,8 +395,7 @@ div h1 {
   text-align: center;
   color:white;
   height: 8rem;
-  padding-left: 1.625rem;
-  padding-right: 1.625rem;
+ 
 }
 
 .lower-button a{
@@ -412,6 +411,8 @@ div h1 {
   font-weight: 700;
   line-height: 1.286;
   transition: box-shadow .42s cubic-bezier(.165,.84,.44,1),color .42s cubic-bezier(.165,.84,.44,1),background .42s cubic-bezier(.165,.84,.44,1);
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 .lower-button a:hover{
   cursor:pointer;
@@ -436,13 +437,13 @@ div h1 {
     margin-bottom: -5rem;
     background-color: white;
     z-index:1;
-    margin-bottom: 9rem;
+    margin-bottom: 8rem;
 }
 .bg2{
   background-color: #45144b;
   color:white;
-  width: fit-content
-  padding: 0 4vw;
+  width: fit-content;
+  
   z-index: -1;
 
 }
@@ -452,4 +453,41 @@ div h1 {
     font-size: 2.25rem;
     font-weight: 700;
     margin-bottom: 1rem;
+}
+.bg2-content{
+  padding: 1rem 1rem;
+}
+.comp-stat-conatiner {
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+}
+
+.comp-stat{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.comp-stat p{
+  font-family: var(--fontheading);
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: -.0012em;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+.stat{
+  display: flex;
+
+}
+.stat h1{
+  font-family:var(--fontheading);
+  letter-spacing: -.012em;
+  font-weight: 700;
+  line-height: 6.5rem;
+  color: #d17dfe;
+  font-size:4.5rem;
 }
