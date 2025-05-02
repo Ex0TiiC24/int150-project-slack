@@ -457,11 +457,12 @@ div h1 {
 .bg2-content{
   padding: 1rem 1rem;
 }
-.comp-stat-conatiner {
+.comp-stat-container {
   display: flex;
   flex-direction:column;
   align-items: center;
   justify-content: center;
+  margin-bottom: 6rem;
 }
 
 .comp-stat{
@@ -490,4 +491,75 @@ div h1 {
   line-height: 6.5rem;
   color: #d17dfe;
   font-size:4.5rem;
+}
+.bg3{
+  background: linear-gradient(#f9f1ff,#fff 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 4vw;
+}
+.bg3-quote{
+  text-align: center;
+  padding-top: 4rem;
+}
+.bg3-stats{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 4rem;
+  border-bottom: 1px solid black;
+}
+.bg3-stats .stats{
+  text-align: center;
+}
+.bg3-stats .stats p{
+  letter-spacing: 0;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.429;
+}
+.bg3-stats .stats h1{
+  font-family: var(--fontheading);
+  letter-spacing: -.012em;
+  margin-bottom: 1rem;
+  font-size: 3.125rem;
+  font-weight: 400;
+  line-height: 1;
+}
+.bg3-reward {
+  padding: 1.5rem;
+  text-align: center;
+  padding-bottom: 7.8rem;
+}
+.bg3-reward h1{
+  margin-top: 0;
+}
+.bg3-reward p{
+  letter-spacing: 0;
+  margin-bottom: 1rem;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.429;
+  padding-bottom: 3rem;
+}
+
+.bg3-reward-box{
+  grid-template-rows: repeat(2,1fr);
+  grid-template-columns: repeat(3,1fr);
+  justify-items: center;
+  row-gap: 2rem;
+  display: grid;
+}
+.bg3-deepdive{
+  text-align: center;
+}
+.bg3-swiper{
+  margin-top: 3rem;
+}
+.bg3-swiper-wrapper .card{
+  background-color: #45144b;
 }
