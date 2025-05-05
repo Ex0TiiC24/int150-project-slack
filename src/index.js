@@ -25,7 +25,8 @@ const updateCount = () =>{
     })
     
 }
-window.addEventListener("scroll",()=>{
+
+const runningNumbers = () =>{
     const rect = container.getBoundingClientRect();
 
     if((rect.top >= 0 && rect.top <= window.innerHeight) ||  (rect.bottom >= 0 && rect.bottom <= window.innerHeight)){
@@ -41,5 +42,8 @@ window.addEventListener("scroll",()=>{
             console.log('unactive');
         }
     }
+}
+window.addEventListener("scroll",()=>{
+    runningNumbers()
 
 })
