@@ -627,15 +627,92 @@ div h1 {
 .bg5{
   display: flex;
   flex-direction: column;
-}
-.bg5-region{
-  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 
 }
+
+.bg5-region{
+  display: flex;
+  cursor: pointer;
+  margin-bottom: 2rem;
+  width: fit-content;
+}
 .bg5-region p{
-  margin: 0;
+  margin:0 .5rem;
+  font-weight: 700;
+  font-size: 1rem;
 }
 #globe{
-  top: 2px;
+  top: 1px;
   position: relative;
+}
+
+.bg5-social {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+}
+
+.bg5-collapse-head{
+  text-transform: uppercase;
+  color: #1d1d1d;
+  text-align: left;
+  letter-spacing: .8px;
+  padding-bottom: .45rem;
+  font-size: .875rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.bg5-collapse{
+  margin-top: 2rem;
+  border-top: 1px solid #edeaed;
+  border-bottom: 1px solid #edeaed;
+  width:89%;
+  padding-top:1rem;
+}
+.bg5-collapse-head p {
+  margin: 0;
+  text-transform: uppercase;
+  color: #1d1d1d;
+  text-align: left;
+  letter-spacing: .8px;
+  padding-bottom: .45rem;
+  font-size: .875rem;
+  font-weight: 700;
+  margin-right: 16rem;
+}
+.bg5-collapse-head img{
+
+}
+.arrow{
+  width: 12px;
+  position: relative;
+  top:-2px;
+}
+
+.bg5-collapse-item{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.bg5-collapse-item a{
+  color: #696969;
+  font-size: .875rem;
+  font-weight: 400;
+  line-height: 1.555;
+  cursor: pointer;
+  letter-spacing: -.0012em;
+  margin-left: 1rem;
+  text-transform: none;
+  padding: 6px 0;
+}
+
+.bg5-collapse-item a:hover{
+  color: #1264a3;
 }
