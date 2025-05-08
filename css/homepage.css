@@ -20,9 +20,15 @@ body {
 header {
   width: 100%;
   display: grid;
-  padding: 1rem 0 1rem 0;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
   grid-template-columns: auto 2fr 4rem 0rem 4rem;
   overflow:hidden;
+  top:0;
+  position: sticky;
+  z-index: 20;
+  background-color: white;
+  box-shadow: 0 4px 40px #00000014;
 }
 h1 {
   letter-spacing: -0.256px;
@@ -631,7 +637,7 @@ div h1 {
   justify-content: center;
   align-items: center;
   width: 100%;
-
+  margin-top: 80px;
 }
 
 .bg5-region{
@@ -676,7 +682,7 @@ div h1 {
   grid-template-columns:100% 1fr;
   grid-template-rows: 1fr;
   cursor: pointer;
-  padding: 24px 2.75vh;
+  padding: 12px 2.75vh;
   align-items: center;
   
 }
@@ -756,6 +762,12 @@ div h1 {
 
 .bg5-footer-content ul{
   padding: 1rem 0;
+  color: #696969;
+  font-size: .875rem;
+  font-weight: 500;
+}
+
+.bg5-footer-content p{
   color: #696969;
   font-size: .875rem;
   font-weight: 500;
