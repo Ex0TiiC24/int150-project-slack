@@ -772,3 +772,11 @@ div h1 {
   font-size: .875rem;
   font-weight: 500;
 }
+
+.sidebar #sidebar-header{
+  box-shadow: 0 0 0 white;
+}
+
+.sidebar {
+  background-color: white;
+}
