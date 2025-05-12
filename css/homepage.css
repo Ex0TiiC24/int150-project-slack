@@ -12,12 +12,14 @@
 * {
   font-family: var(--fontbody);
   font-size: 1rem;
+  
 }
 body {
   margin: 0;
   width: 100%;
 }
 header {
+  
   width: 100%;
   display: grid;
   padding-top: .5rem;
@@ -442,7 +444,7 @@ div h1 {
     height: 5rem;
     margin-bottom: -5rem;
     background-color: white;
-    z-index:1;
+    z-index:0;
     margin-bottom: 8rem;
 }
 .bg2{
@@ -775,8 +777,47 @@ div h1 {
 
 .sidebar #sidebar-header{
   box-shadow: 0 0 0 white;
+  z-index: 21;
 }
+
 
 .sidebar {
   background-color: white;
+  position: fixed;
+  top:0%;
+  width: 100%;
+  height: 100%;
 }
+.sidebar-content{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.sidebar-content .bg5-collapse-head p{
+  font-size: 1.125rem;
+  text-transform: none;
+}
+#watchdemo p{
+  color: #1264a3;
+}
+
+.sidebar-content-upper{
+  
+}
+.sidebar-content-lower {
+  
+  
+}
+
+.sidebar-content-lower .lower-button a{
+  background-color:  white;
+  border: 1px solid #611f69;
+  color:#611f69;
+  
+}
+.sidebar-content-lower .lower-button a+a{
+  background-color: #611f69;
+  color:white;
+}
+

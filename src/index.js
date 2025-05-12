@@ -1,6 +1,6 @@
 const container = document.querySelector(".comp-stat-container");
 const statContainers = document.querySelectorAll(".comp-stat");
-const clicktoExpand = document.querySelectorAll(".bg5-collapse-head");
+const clicktoExpand = document.querySelectorAll(".bg5 .bg5-collapse-head");
 let activated = false;
 
 const updateCount = () => {
@@ -67,4 +67,18 @@ const expandCollapsed = () => {
     });
 };
 
-expandCollapsed();
+expandCollapsed()
+
+const openSidebar = () =>{
+    document.querySelector(".sidebar").style.display = "block"
+    document.querySelector("header").style.display = "none";
+    document.querySelector("main").style.display = "none";
+    console.log("opened")
+}
+
+const closeSidebar = () =>{
+    document.querySelector(".sidebar").style.display = "none";
+    document.querySelector("header").style.display = "grid";
+    document.querySelector("main").style.display = "flex";
+    console.log("closed")
+}
