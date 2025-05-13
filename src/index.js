@@ -70,15 +70,14 @@ const expandCollapsed = () => {
 expandCollapsed()
 
 const openSidebar = () =>{
-    document.querySelector(".sidebar").style.display = "block"
-    document.querySelector("header").style.display = "none";
-    document.querySelector("main").style.display = "none";
+    document.querySelector(".sidebar").style.right = "0%"
+
+
     console.log("opened")
 }
 
 const closeSidebar = () =>{
-    document.querySelector(".sidebar").style.display = "none";
-    document.querySelector("header").style.display = "grid";
-    document.querySelector("main").style.display = "flex";
+    document.querySelector(".sidebar").style.right= "-100%";
+   
     console.log("closed")
 }

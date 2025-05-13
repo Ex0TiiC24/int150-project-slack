@@ -17,6 +17,7 @@
 body {
   margin: 0;
   width: 100%;
+
 }
 header {
   
@@ -507,6 +508,7 @@ div h1 {
   justify-content: center;
   align-items: center;
   padding: 0 4vw;
+  
 }
 .bg3-quote{
   text-align: center;
@@ -567,9 +569,88 @@ div h1 {
 }
 .bg3-swiper{
   margin-top: 3rem;
+  width: 100%;
+  overflow: hidden;
 }
 .bg3-swiper-wrapper .card{
   background-color: #45144b;
+}
+
+.card-slide{
+  display: flex;
+  flex-direction: column;
+  margin: 2.5rem;
+  padding: .825rem;
+  margin-bottom: 0;
+  box-shadow: 0 5px 20px #0000001a;
+  border-radius: .5rem;
+  text-align: left;
+  height: 24rem;
+  width: 100%;
+}
+
+.bg3-navi{
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  display: flex;
+  justify-content: center;
+  gap: .85rem;
+}
+.bg3-navi span svg circle{
+  fill: #696969;
+}
+
+.bg3-navi svg{
+  width: 12px;
+}
+
+.bg3-navi svg path{
+  fill: #acacac;
+}
+
+.card-slide h1,p{
+  padding: 0;
+  margin: 0;
+}
+.card-slide p{
+  margin-top: 8px;
+  letter-spacing: .1px;
+  line-height: 1.3;
+  color: #454245;
+  margin: 8px 0 0;
+  font-size: .875rem;
+  font-weight: 400;
+  line-height: 1.429;
+  display: inline-block;
+    
+}
+.card-slide h1{
+  letter-spacing: -.004em;
+  color: #000;
+  margin: .5rem 0 1rem;
+  font-size: clamp(1.4rem, .25641vw + 1.3359rem, 1.5rem);
+  font-weight: 700;
+  line-height: 30px;
+  flex-grow: 1;
+}
+.card-slide .readmore{
+  display:flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.readmore p {
+  color: #1264a3;
+  font-weight: 700;
+  letter-spacing: .057em;
+  text-transform: uppercase;
+  white-space: normal;
+}
+.bg3-swiper-wrapper{
+  display: flex;
+  width:100%;
+  position: relative;
+
+
 }
 
 .bg3-info{
@@ -742,6 +823,7 @@ div h1 {
   padding: 2rem 1rem;
   display: flex;
   flex-direction: column;
+  
 }
 #slack{
   width: 40px;
@@ -784,14 +866,18 @@ div h1 {
 .sidebar {
   background-color: white;
   position: fixed;
-  top:0%;
+  top:0;
+  right: -100%;
   width: 100%;
   height: 100%;
+  transition: right .3s ease-in-out;
+  z-index: 90;
 }
 .sidebar-content{
   display: flex;
   flex-direction: column;
   height: 100%;
+  
 }
 
 .sidebar-content .bg5-collapse-head p{
@@ -803,10 +889,10 @@ div h1 {
 }
 
 .sidebar-content-upper{
-  
+
+ height: 77%;
 }
 .sidebar-content-lower {
-  
   
 }
 
