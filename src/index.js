@@ -1,6 +1,9 @@
 const container = document.querySelector(".comp-stat-container");
 const statContainers = document.querySelectorAll(".comp-stat");
 const clicktoExpand = document.querySelectorAll(".bg5 .bg5-collapse-head");
+const slider = document.querySelectorAll(".bg3-navi svg");
+const card = document.querySelectorAll(".card-slide")
+
 let activated = false;
 
 const updateCount = () => {
@@ -81,3 +84,29 @@ const closeSidebar = () =>{
    
     console.log("closed")
 }
+
+const sliderController = () =>{
+    slider.forEach((button,i)=>{
+        button.addEventListener("click",() => {
+            console.log(i,"clicked")
+            card.forEach((card,k)=>{
+                let buttoncolor = button.querySelector("path")
+                if(i==k){
+                    card.style.display = "flex"
+                    buttoncolor.style.fill = "#45144b"
+                    console.log("change color purple")
+                }
+                    
+                else{
+                    card.style.display = "none"
+                    buttoncolor.style.fill = "#acacac"
+                    console.log("change color gray")
+                }
+                
+            })
+
+        })
+    })
+}
+
+sliderController()

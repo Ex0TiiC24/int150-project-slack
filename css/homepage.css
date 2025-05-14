@@ -90,6 +90,11 @@ main {
   justify-content: center;
   align-items: center;
   width: 100%;
+  overflow: hidden;
+}
+
+.wherework{
+  margin-top: 3rem;
 }
 
 .main-button {
@@ -507,7 +512,8 @@ div h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0 4vw;
+  padding: 0 2rem;
+ 
   
 }
 .bg3-quote{
@@ -587,6 +593,8 @@ div h1 {
   text-align: left;
   height: 24rem;
   width: 100%;
+  transition: display ease-in-out .5s;
+
 }
 
 .bg3-navi{
@@ -647,9 +655,22 @@ div h1 {
 }
 .bg3-swiper-wrapper{
   display: flex;
-  width:100%;
-  position: relative;
-
+  justify-content: center;
+  
+}
+.card-slide{
+  display: none;
+}
+#card1{
+  display: none;
+}
+#card2{
+  display: flex;
+}
+#card3{
+  
+}
+#card4{
 
 }
 
