@@ -54,6 +54,13 @@ a {
   width: 1.25rem;
 
 }
+.header-nav{
+  display: none;
+}
+header .searchlogo+a{
+  display: none;
+
+}
 .searchlogo {
   display: flex;
   justify-content: center;
@@ -71,7 +78,7 @@ a {
   border-radius: 6px;
   height: 2.5rem;
   display: none;
-  visibility: hidden;
+  
 }
 .hamburger {
   display: flex;
@@ -94,7 +101,8 @@ main {
 }
 
 .wherework{
-  margin-top: 3rem;
+  margin: 3rem 0;
+  margin-bottom: 2rem;
 }
 
 .main-button {
@@ -105,15 +113,15 @@ main {
   gap: 18px;
 }
 .main-button p {
-  padding: 0 29vw;
+  width: 70%;
+  
   font-size: 18px;
   text-align: center;
   margin-bottom: 0.45rem;
   letter-spacing: -0.004em;
   font-size: 0.9rem;
   line-height: 1.555;
-  padding: 0 8vw;
-  max-width: 24.5rem;
+  font-weight: 500;
 }
 
 .main-button a {
@@ -142,11 +150,31 @@ main {
   margin-bottom: 2rem;
   justify-content: center;
   align-items: center;
-  width: 40%;
+  width: 80%;
+  
   gap: 20px;
 }
 .main-connect img {
-  height: 0.9rem;
+  width: 30px;
+}
+#gm {
+  width: 35px;
+}
+#openai {
+  width: 70px;
+  height: 20px;
+}
+#red{
+  width: 38px;
+}
+#para{
+  width: 64px;
+}
+#stripe{
+  width: 68px;
+}
+#ibm{
+  width: 65px;
 }
 
 .main-content {
@@ -591,10 +619,9 @@ div h1 {
   box-shadow: 0 5px 20px #0000001a;
   border-radius: .5rem;
   text-align: left;
-  height: 24rem;
   width: 100%;
   transition: display ease-in-out .5s;
-
+  max-width: 100%;
 }
 
 .bg3-navi{
@@ -640,6 +667,7 @@ div h1 {
   font-weight: 700;
   line-height: 30px;
   flex-grow: 1;
+  margin-bottom: 3rem;
 }
 .card-slide .readmore{
   display:flex;
@@ -660,12 +688,14 @@ div h1 {
 }
 .card-slide{
   display: none;
+  
+  
 }
 #card1{
-  display: none;
+  display: flex;
 }
 #card2{
-  display: flex;
+  
 }
 #card3{
   
@@ -928,3 +958,99 @@ div h1 {
   color:white;
 }
 
+.button-container{
+  display: flex;
+  justify-content: center;
+  gap: .5rem;
+  flex-direction: column;
+  width: 80%;
+
+}
+.button-container a {
+  width: 100%;
+  
+}
+
+.desktop-des{
+  display: none;
+}
+
+@media screen and (min-width:1024px) {
+  @keyframes slide-in--down {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0);
+}
+  }
+  body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+  }
+  header{
+    grid-template-columns: auto 2fr 4rem 8rem;
+    box-shadow: none;
+    background-color: white;
+    border-bottom: none;
+    position: sticky;
+    width: 90%;
+    border-radius: 1rem;
+  }
+  .hamburger{
+    display: none;
+  }
+  .header-nav{
+    display: flex;
+    padding-left:1.5rem;
+    gap: 1rem;
+    align-items: center;
+  }
+  .header-nav p{
+    color:#1d1d1d;
+    font-weight: 700;
+  }
+  header-nav .searchlogo+a{
+    display: block;
+  }
+  #logo{
+    position: relative;
+    top:10px
+  }
+  .getStarted{
+    display: block;
+  }
+  .getStarted{
+    padding: .5rem;
+    text-align: center;
+    display: flex;
+  }
+  .main-button p{
+    width: 45%;
+  }
+  .main-connect{
+    gap: 5rem;
+  }
+  .main-content .bg .headline h1{
+    padding: 0 7rem;
+    font-size: 3.125rem;
+    font-weight: 700;
+    letter-spacing: -0.012em;
+    line-height: 3.5rem;
+  }
+  .desktop-des{
+    display: flex;
+    margin: 0 auto;
+    gap: 1.25rem;
+    margin-bottom: 8rem;
+  }
+  .desktop video{
+    display: none;
+  }
+  .main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}

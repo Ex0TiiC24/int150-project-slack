@@ -9,12 +9,22 @@
 
 <body>
   <header>
-    <div>
-      <img src="./assets/images/logo/slack-salesforce-logo-nav-black@2x.png" id="logo" />
+    <div class="slacklogo-container">
+      <img  src="./assets/images/logo/slack-salesforce-logo-nav-black@2x.png" id="logo" />
+    </div>
+    <div class="header-nav">
+      <p>Features</p>
+      <p>Solutions</p>
+      <p>Enterprise</p>
+      <p>Resources</p>
+      <p>Pricing</p>
     </div>
     <div class="searchlogo">
       <a href="" id="searchlogo"><img src="./assets/images/icons/search.svg" id="searchlogo" /></a>
     </div>
+    <a>
+      Sign in
+    </a>
     <a href="">
       <div class="getStarted">GET STARTED</div>
     </a>
@@ -32,16 +42,19 @@
         Start a conversation. Close your next deal. Team up with AI agents. It
         all happens in Slack.
       </p>
-      <a href="">GET STARTED</a>
-      <a href="">FIND YOUR PLAN</a>
+      <div class="button-container">
+        <a href="">GET STARTED</a>
+        <a href="">FIND YOUR PLAN</a>
+      </div>
+      
     </div>
     <div class="main-connect">
-      <img src="./assets/images/connect/logo-gm-small@2x.png" />
-      <img src="./assets/images/connect/logo-openai-small@2x.png" />
-      <img src="./assets/images/connect/logo-target-small@2x.png" />
-      <img src="./assets/images/connect/logo-paramount-small@2x.png" />
-      <img src="./assets/images/connect/logo-stripe-small@2x.png" />
-      <img src="./assets/images/connect/logo-ibm-small@2x.png" />
+      <img id="gm" src="./assets/images/connect/logo-gm-small@2x.png" />
+      <img id="openai" src="./assets/images/connect/logo-openai-small@2x.png" />
+      <img id="red" src="./assets/images/connect/logo-target-small@2x.png" />
+      <img id="para" src="./assets/images/connect/logo-paramount-small@2x.png" />
+      <img id="stripe" src="./assets/images/connect/logo-stripe-small@2x.png" />
+      <img id="ibm" src="./assets/images/connect/logo-ibm-small@2x.png" />
     </div>
     <div class="main-content">
       <video src="assets/videos/Team discussing work in the Slack app.webm" autoplay loop
@@ -50,8 +63,18 @@
       <div class="bg">
         <div class="headline">
           <h1>Bring your people, projects, apps, and AI agents together.</h1>
+
         </div>
-        <div class="collab">
+        <div class="desktop-des">
+          <p class="collabs">COLLABORATION</p>
+          <p class="collabs">PROJECT MANAGEMENT</p>
+          <p class="collabs">INTEGRATIONS</p>
+          <p class="collabs">SLACK AI</p>
+          <p class="collabs">AGENTFORCE</p>
+        </div>
+        <div class="main">
+          <div class="desktop">
+          <div class="collab">
           <div class="collab-head">
             <svg id="handclap">
               <path fill-rule="evenodd" clip-rule="evenodd"
@@ -184,6 +207,10 @@
             src="https://a.slack-edge.com/54df558/marketing/img/homepage/revamped-24/value-props/hp-vp-3.en-GB@2x.webm"
             autoplay loop></video>
         </div>
+        </div>
+        
+        </div>
+        
         <div class="card">
           <div class="collab-head">
             <svg id="handclap">

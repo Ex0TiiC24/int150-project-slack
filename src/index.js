@@ -85,28 +85,40 @@ const closeSidebar = () =>{
     console.log("closed")
 }
 
-const sliderController = () =>{
-    slider.forEach((button,i)=>{
-        button.addEventListener("click",() => {
-            console.log(i,"clicked")
-            card.forEach((card,k)=>{
-                let buttoncolor = button.querySelector("path")
-                if(i==k){
-                    card.style.display = "flex"
-                    buttoncolor.style.fill = "#45144b"
-                    console.log("change color purple")
-                }
-                    
-                else{
-                    card.style.display = "none"
-                    buttoncolor.style.fill = "#acacac"
-                    console.log("change color gray")
-                }
-                
-            })
+const sliderController = () => {
+    slider.forEach((button, i) => {
+        button.addEventListener("click", () => {
+            card.forEach((cardEl, k) => {
 
-        })
-    })
+                cardEl.style.display = (i === k) ? "flex" : "none";
+            });
+    
+            slider.forEach((btn, idx) => {
+                let btnPath = btn.querySelector("path");
+                if (i === idx) {
+                    btnPath.style.fill = "#45144b"; // active color
+                } else {
+                    btnPath.style.fill = "#acacac"; // inactive color
+                }
+            });
+        });
+    });
 }
 
-sliderController()
+sliderController();
+
+
+function handleVideoPlayback(x) {
+  const video = document.querySelector('.wherework');
+  if (x.matches) {
+    video.loop = true;
+    video.play();
+  } else {
+    video.pause();
+  }
+}
+
+const mq = window.matchMedia('(min-width: 1024px)');
+handleVideoPlayback(mq); // initial check
+mq.addEventListener('change', () => handleVideoPlayback(mq)); // listen for changes
+
