@@ -57,9 +57,8 @@ a {
 .header-nav{
   display: none;
 }
-header .searchlogo+a{
+#signin{
   display: none;
-
 }
 .searchlogo {
   display: flex;
@@ -247,6 +246,9 @@ main {
   padding-top: 2px;
   font-weight: 500;
 }
+.card a p {
+  margin-top: 1rem;
+}
 .collab h1 {
   margin-right: auto;
 }
@@ -352,7 +354,7 @@ div h1 {
   gap: 2rem;
 }
 .quote p{
-  display: none;
+  
 }
 
 .packages-container {
@@ -974,6 +976,20 @@ div h1 {
 .desktop-des{
   display: none;
 }
+.video-container{
+  display: none;
+  justify-content: center;
+  padding: 1.25rem;
+  padding-top: 4rem;
+  
+}
+.slackvideo{
+    display: none;
+}
+.collab-head{
+  flex-direction: column;
+}
+
 
 @media screen and (min-width:1024px) {
   @keyframes slide-in--down {
@@ -982,7 +998,7 @@ div h1 {
     }
     100% {
       transform: translateY(0);
-}
+    }
   }
   body{
     display: flex;
@@ -991,7 +1007,7 @@ div h1 {
     align-items: center ;
   }
   header{
-    grid-template-columns: auto 2fr 4rem 8rem;
+    grid-template-columns: auto 2fr 4rem  4rem 8rem;
     box-shadow: none;
     background-color: white;
     border-bottom: none;
@@ -1011,9 +1027,15 @@ div h1 {
   .header-nav p{
     color:#1d1d1d;
     font-weight: 700;
+    font-size: .8rem;
   }
-  header-nav .searchlogo+a{
+  #signin{
     display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    color:black
   }
   #logo{
     position: relative;
@@ -1032,6 +1054,9 @@ div h1 {
   }
   .main-connect{
     gap: 5rem;
+  }
+  .main{
+    padding: 0 1rem;
   }
   .main-content .bg .headline h1{
     padding: 0 7rem;
@@ -1052,5 +1077,131 @@ div h1 {
   .main {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+  .video-container{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+  }
+  .slackvideo{
+    width: 95%;
+    height: 95%;
+    display: flex;
+  }
+  .card{
+    margin: 0 4rem;
+    flex-direction: row;
+  
+  }
+  .collab-head{
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+  }
+  .collab-head h1{
+    font-size: 3.125rem;
+    font-weight: 700;
+    letter-spacing: -.012em;
+    margin-top: 0;
+  }
+  #collab{
+    
+  }
+  .collab-title{
+    display: flex;
+    flex-direction: row;
+  }
+  .collab-title svg{
+    margin-right: 1rem;
+  }
+  .wherework{
+    width: 900px;
+  }
+  .desktop-video-hover{
+    width: 100%;
+  }
+  .little-card{
+    width: 11.5rem;
+  }
+  
+  .desktop-des .collabs svg{ 
+    position: relative;
+    top:4px;
+    margin-right: 10px;
+  }
+  .desktop-des{
+    gap:20px
+  }
+  .desktop{
+    margin-bottom: 10rem
+  }
+  .desktop .collabs{
+    letter-spacing: .057em;
+    text-transform: uppercase;
+    font-size: .875rem;
+    font-weight: 700;
+    line-height: 1.286;
+  }
+  .fortune {
+    flex-direction: row;
+    align-items: center; 
+    margin-top: 2rem;
+  }
+  .fortune h1{
+    margin: 0;
+  }
+  .desktop-video-hover{
+    display: flex;
+    justify-content: center;
+  }
+  .desktop-video{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .desktop-video{
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    margin-top: 5rem;
+    
+    
+  }
+  .desktop-video h1{
+    letter-spacing: -.012em;
+    font-size: 3.125rem;
+    font-weight: 700;
+    margin: 0 17rem;
+    margin-bottom: 3rem;
+  }
+  .desktop-video-hover{
+    width: 100%;
+  }
+  .little-card{
+    width: 11.4375rem;
+    height: 20.5rem;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    border-radius: 1rem;
+  }
+  #li1 {
+    
+  }
+  #li2{
+    
+  }
+  #li3{
+    background-image: url(../assets/images/minicard/background-ezcater.jpg);
+  }
+  #li4{
+
+  }
+  .packages-container{
+    display: flex;
+    
   }
 }
