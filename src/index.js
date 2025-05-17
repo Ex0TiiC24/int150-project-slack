@@ -118,7 +118,3 @@ function handleVideoPlayback(x) {
   }
 }
 
-const mq = window.matchMedia('(min-width: 1024px)');
-handleVideoPlayback(mq); // initial check
-mq.addEventListener('change', () => handleVideoPlayback(mq)); // listen for changes
-
