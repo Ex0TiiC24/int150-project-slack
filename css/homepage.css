@@ -1015,7 +1015,9 @@ header a{
     padding-left: .5rem;
     display: none;
   }
-
+.video-scroller{
+  display: none;
+}
 
 @media screen and (min-width:1024px) {
   @keyframes slide-in--down {
@@ -1184,9 +1186,7 @@ header a{
     margin-bottom: 0rem;
   }
   #vidbg{
-    position:absolute;
-    top: 8rem;
-    left: 65rem;
+    
     z-index: -1;
     transition: fill 0.3s;
   }
