@@ -25,8 +25,7 @@ header {
   display: grid;
   padding-top: .5rem;
   padding-bottom: .5rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  
   grid-template-columns: auto 2fr 4rem 4rem;
   overflow:hidden;
   top:0;
@@ -48,6 +47,7 @@ p {
 a {
   text-decoration: none;
 }
+
 #logo {
   width: 6rem;
   padding-left: 1rem;
@@ -1018,6 +1018,18 @@ header a{
 .video-scroller{
   display: none;
 }
+.slackvideo {
+  display: none;
+}
+.desktop-video{
+  display: none;
+}
+.bg .main{
+  /* display: block; */
+}
+.video{
+  display: none;
+}
 
 @media screen and (min-width:1024px) {
   @keyframes slide-in--down {
@@ -1028,6 +1040,7 @@ header a{
       transform: translateY(0);
     }
   }
+  
   body{
     display: flex;
     flex-direction: column;
@@ -1118,7 +1131,7 @@ header a{
   }
   .main-connect {
     gap: 12.5rem;
-    min-width: 85%;
+    min-width: 90%;
   }
   .button-container{
     flex-direction: row;
@@ -1138,6 +1151,8 @@ header a{
   }
   .main{
    padding: 10rem 1rem;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
   }
   
   .desktop{
@@ -1176,9 +1191,8 @@ header a{
     padding-right: 6rem;
     margin-bottom: 24rem;
   }
-  .video{
-   
-  }
+  
+  
   #vid3{
     margin-bottom: 17rem;
   }
@@ -1194,14 +1208,15 @@ header a{
     width: 540;
     height: 540;
     }
-  }
-  .main {
+   .main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap:10rem;
 
   }
   .video {
+    display: flex;
+    flex-direction: column;
     padding-top: 8rem;
   }
   .video video{
@@ -1257,7 +1272,7 @@ header a{
     margin-right: 1rem;
   }
   .wherework{
-    width: 900px;
+    width: 100%
   }
   .desktop-video-hover{
     width: 100%;
@@ -1275,7 +1290,7 @@ header a{
     gap:20px
   }
   .desktop{
-    margin-bottom: 10rem
+   
   }
   .desktop-des .collabs{
     letter-spacing: .057em;
@@ -1342,6 +1357,7 @@ header a{
   }
   .packages-container{
     display: flex;
-
   }
+
+
 }
