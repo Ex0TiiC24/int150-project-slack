@@ -1596,8 +1596,9 @@ header a{
     justify-content: center;
     align-items: center;
     gap:10px;
-    margin: 0 4rem;
-    border-top: 1px solid gray;
+    margin: 0 3rem;
+    border-top: 1px solid #edeaed;
+    padding: 2rem 0;
   }
   .bg5-footer-content #slack{
     display: none;
@@ -1695,5 +1696,9 @@ header a #talkto{
   color: #611f69;
   background-color: white;
   border:1px solid #611f69;
+}
+.desktop div .collab-head+h1{
+  width: 440px;
+  margin-bottom: 1rem;
 }
 } 
