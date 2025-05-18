@@ -1629,7 +1629,7 @@ header a{
 #vidbg {
   position: absolute;
   display: block;
-  left: 40%;
+  left: 20%;
   z-index: -1;
   transition:top 0.3s;
   pointer-events: none;
@@ -1664,6 +1664,7 @@ header a{
 }
 .main{
   margin-bottom: 7.5rem;
+  padding: 1rem 14rem;
 }
 .video{
     position: relative;
