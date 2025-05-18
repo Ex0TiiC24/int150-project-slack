@@ -1710,3 +1710,8 @@ header a #talkto{
   width: 89%;  
 }
 } 
+@media screen and (min-width: 1024px) and (max-width: 1770px) {
+  .main{
+      padding-left: 7rem;
+  }
+}
