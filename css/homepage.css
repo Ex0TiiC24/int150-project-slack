@@ -491,7 +491,7 @@ div h1 {
   background-color: #45144b;
   color:white;
   width: fit-content;
-  
+  width: 100%;
   z-index: -1;
 
 }
@@ -547,7 +547,7 @@ div h1 {
   justify-content: center;
   align-items: center;
   padding: 0 2rem;
- 
+  width: 100%;
   
 }
 .bg3-quote{
@@ -1030,7 +1030,28 @@ header a{
 .video{
   display: none;
 }
+.little-content img{
+  display: none;
+}
 
+.bg5-desktop{
+  width: 100%;
+  justify-content: center;
+  display: flex; flex-direction: column;
+  align-items: center;
+}
+.bg5-desktop-img{
+  display: none;
+}
+.bg5-collapse{
+  width: 100%;
+}
+.bg5-collapse-head{
+  
+}
+.bg5-desktop-info{
+  width: 100%;
+}
 @media screen and (min-width:1024px) {
   @keyframes slide-in--down {
     0% {
@@ -1150,11 +1171,11 @@ header a{
     width: 45%;
   }
   .main{
-   padding: 10rem 1rem;
+   padding: 1rem 1rem;
    display: grid;
    grid-template-columns: 1fr 1fr;
   }
-  
+
   .desktop{
     padding-top: 10rem;
   }
@@ -1335,29 +1356,266 @@ header a{
   }
   .desktop-video-hover{
     width: 100%;
+    padding: 0 10rem;
+    column-gap: 3.5rem;
+    
   }
   .little-card{
-    width: 11.4375rem;
     height: 20.5rem;
     background-position: 50%;
     background-repeat: no-repeat;
     border-radius: 1rem;
-  }
-  #li1 {
+    width: 9rem;
+    max-height: 16.25rem;
+    transition: width .65s;
+    padding: 1.5rem;
+    color:white;
     
+  }
+  .little-card img:first-child{
+    margin-top: 6rem;
+  }
+  .little-card h3{
+    display: none;
+    transition: all 1s ease-in .4s;
+  }
+  .little-card:hover{
+    width: 28.75rem;
+  }
+  .little-card:hover img{
+    
+    display: block;
+  }
+  .little-card:hover h3{
+    display: block;
+    text-align: left;
+    
+  }
+  .little-content{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+  }
+  .little-content img{
+    width: 90px;
+    height: 90px;
+  }
+  
+  #li1 {
+    background-image: url(../assets/images/minicard/background-openai.jpg);
+    /* width: 28.75rem; */
   }
   #li2{
-    
+    background-image: url(../assets/images/minicard/spotify-poster.jpg);
   }
   #li3{
     background-image: url(../assets/images/minicard/background-ezcater.jpg);
   }
   #li4{
-
+    background-image: url(../assets/images/minicard/background-ari.jpg);
   }
   .packages-container{
     display: flex;
   }
-
-
-}
+  .packages-container{
+    padding: 1rem 0rem;
+  }
+  .packages-container .packages{
+    width: 17.5%;
+  }
+  .lower-button{
+    flex-direction: row;
+    justify-content: center;
+    height: auto;
+  }
+  .lower-button a{
+    text-align: center;
+    margin: 2rem 0;
+    width: 10rem;
+  }
+  .bg2{
+    width: 100%;
+    padding-bottom: 10rem;
+  }
+  .comp-stat-container{
+    flex-direction:row ;
+    justify-content: space-between;
+    padding: 0 12rem;
+    margin-top: 2rem;
+  }
+  .comp-stat-container .comp-stat{
+    width: 17.5rem;
+    
+  }
+  .comp-stat-container .comp-stat h1{
+    color: #d17dfe;
+    font-size: 6rem;
+    line-height: 6.5rem;
+  }
+  .comp-stat-container .comp-stat p{
+    margin-top: 1rem
+  }
+  .bg2-quote h1{
+    font-size: 3.125rem;
+    margin-top: 9rem;
+  }
+  .lower-arc{
+    clip-path: ellipse(70% 200% at 50% -105%);
+  }
+  .bg3-desktop-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .bg3-stats{
+    border: none;
+    align-items: flex-start;
+    border-right: 1px solid gray;
+  }
+  .bg3-stats-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .bg3-stats .stats{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .bg3-stats .stats p{
+    margin: 0;
+    margin-top: 1rem;
+    margin-left:1rem;
+    width: 60%;
+    text-align: left;
+  }
+  .bg3-quote{
+    line-height: 3.5rem;
+    font-size: 3.125rem;
+  }
+  .bg3-reward h1{
+    margin-top: 3rem;
+  }
+  .bg3-reward{
+    margin-left: 4rem;
+  }
+  .card-slide{
+    display: flex!important;
+    margin-bottom: 1rem;
+    transition: transform .42s cubic-bezier(.165,.84,.44,1);
+  }
+  .card-slide:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+  .bg3-navi {
+    display: none;
+  }
+  .bg3-info{
+    margin-top: 5rem;
+    
+  }
+  .bg3-deepdive{
+    padding: 0 7rem;
+  }
+  #lower-arc-purple{
+    /* clip-path: ellipse(75% 100% at top); */
+  }
+  .bg5-desktop{
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  .arrow{
+    display: none;
+  }
+  .bg5-collapse-head{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+  }
+  .bg5-collapse-item{
+    display: flex !important; 
+  }
+  .bg5-collapse-item a{
+    margin-left: 0;
+    
+  }
+  .bg5-collapse{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    width: 100%;
+    border: none;
+    margin: 0;
+    
+  }
+  .bg5-collapse-head p {
+    width: 100%;
+    text-align: left;
+  }
+  #col1 { 
+    grid-area: 1 / 1 / 2 / 2; 
+  }
+  #col2 { 
+    grid-area: 2 / 1 / 3 / 2; 
+  }
+  #col3 { 
+    grid-area: 1 / 2 / 3 / 3; 
+  }
+  #col4 { 
+    grid-area: 1 / 3 / 3 / 4; 
+  }
+  #col5 { 
+    grid-area: 1 / 4 / 3 / 5; 
+  }
+  #col6 { 
+    grid-area: 1 / 5 / 3 / 6; 
+  }
+  .bg5-desktop-info{
+    display: flex;
+    width: 90%;
+    gap: 10rem;
+    padding-top: 3rem;
+    border-top: 1px solid #edeaed;
+  }
+  .bg5-desktop-img{
+    margin-top: 2rem;
+  }
+  .bg5-desktop-img{
+  display: block;
+  }
+  .bg5-footer-content{
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    margin: 0 4rem;
+    border-top: 1px solid gray;
+  }
+  .bg5-footer-content #slack{
+    display: none;
+  }
+  .bg5-footer-content a{
+    margin-top: 0;
+  }
+  .bg5-footer-content ul+p{
+    width: 12rem;
+  }
+  .bg5-footer-content p+p{
+    margin-left: 13rem;
+    text-align: right;
+    width: 50%;
+  }
+  .bg5-footer-content ul{
+    width: fit-content  ;
+  }
+  .main-content .discussing-video{
+    width: 50%;
+  }
+} 
