@@ -991,7 +991,8 @@ div h1 {
     display: none;
 }
 .collab-head{
-  flex-direction: column;
+  flex-direction: row;
+  gap:.5rem;
 }
 .desktop-video{
   display: none;
