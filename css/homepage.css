@@ -994,6 +994,10 @@ div h1 {
   flex-direction: row;
   gap:.5rem;
 }
+.card .collab-head{
+  flex-direction: column;
+}
+
 .desktop-video{
   display: none;
 }
@@ -1053,6 +1057,9 @@ header a{
 }
 #vidbg{
   display: none;
+}
+#blue-card{
+  flex-direction: column;
 }
 @media screen and (min-width:1024px) {
   @keyframes slide-in--down {
