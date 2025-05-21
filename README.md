@@ -1,2 +1,2 @@
-I am drinking a water 
-very aroi mak mak leoi ei
+Slack clone using pure HTML+CSS,Javascript 
+-INT150 Web Technology Project-
